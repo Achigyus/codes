@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+}
+
+/* Nav Bar Styles */
+
+#nav-bar {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+.com-name {
+    padding: 5px 10px 0 40px;
+}
+
+.top-nav {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.top-nav li {
+    display: block;
+}
+
+.top-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+}
+
+.top-nav li.dropdownIcon {
+    display: none;
+}
+
+/* Header Styles */
+
+.header {
+    width: 60%;
+}
+
+header {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    max-height: 1080px;
+    background-image: url(./hacker-working-darkness.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 2px 4px rgba(#000,0.2);
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom right, #28e, #e14);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+header h1 {
+    font-size: 400%;
+}
+
+header p {
+    font-size: 100%;
+}
+
+/* About Us Styles */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 10px;
+}
+
+
+/* Column Styles */
+
+.column {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(203, 90%, 50%);
+    padding: 20px;
+}
+
+.row {
+    padding: 30px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+/* Form Styles */
+
+.form {
+    background-color: rgba(0, 126, 206, .1);
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.subscribe {
+    margin-bottom: 10px;
+}
+
+input[type="email"] {
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin-top: 10px;
+    margin: 10px auto;
+    padding: 8px 20px;
+    background-color: #007ece;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: hsl(203, 100%, 20%);
+}
+
+/* Footer Styles */
+
+.footer {
+    background-color: #2d2b2a;
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+.foot {
+    margin-bottom: 10px;
+}
+
+.container, .header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/* Mobile Styles */
+
+@media screen and (max-width:750px) {
+
+    body {
+        width: 100vw;
+    }
+
+    .com-name {
+        padding: 10px 10px 0 20px;
+    }
+
+    ul.top-nav li:not(:nth-child(1))  {
+        display: none;
+    }
+
+    ul.top-nav li.dropdownIcon {
+        display: block;
+    }
+
+   ul.top-nav.responsive li.dropdownIcon {
+       position: absolute;
+       top: 5px;
+       right: 30px;
+   }
+
+   ul.top-nav.responsive {
+       position: relative;
+       text-align: center;
+       display: block;
+       width: 100%;
+       margin: 20px 0;
+   }
+
+   ul.top-nav.responsive li {
+       display: block;
+   }
+
+   ul.top-nav.responsive li:hover {
+       background-color: #eee;
+       color: white;
+   }
+
+    .column {
+        display: block;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    .foot {
+        flex: 1 40%;
+    }
+}

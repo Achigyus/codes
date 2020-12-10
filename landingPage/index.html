@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <nav id="nav-bar">
+        <h1 class="com-name">Company Name</h1>
+        <ul class="top-nav" id="dropdownClick">
+            <li class="nav-link"><a href="#about">Item</a></li>
+            <li class="nav-link"><a href="#column">Item</a></li>
+            <li class="nav-link"><a href="#video">Item</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+    <header id="header">
+        <section  class="header">
+            <h1 class="landing">Landing Page</h1>
+            <p class="dummy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias possimus dolorem accusantium aliquam incidunt dolor, illo quaerat itaque numquam.</p>
+        </section>
+    </header>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo optio ipsa quod! Nostrum, mollitia minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, pariatur.</p>
+    </section>
+
+    <section class="column" id="column">
+        <article class="row">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo quas velit obcaecati fugit aliquid cupiditate minus amet accusantium at laudantium illum temporibus facere hic magni alias, recusandae quia ullam dolores totam quod similique? Eligendi fugiat eaque voluptatibus earum iure quasi, soluta non harum, a quam facere. Nulla rem ratione illum quasi expedita earum assumenda a ipsum nam cum, atque inventore, quis id totam officiis commodi nesciunt! Suscipit recusandae ex ab hic voluptatem incidunt quas. Maiores, qui totam. Similique nesciunt possimus voluptatum blanditiis? Assumenda corrupti voluptatum magni enim suscipit cum sequi aliquam sapiente quam ratione. Aliquam ex nihil facere vitae.</p>
+        </article>
+
+        <article class="row">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo quas velit obcaecati fugit aliquid cupiditate minus amet accusantium at laudantium illum temporibus facere hic magni alias, recusandae quia ullam dolores totam quod similique? Eligendi fugiat eaque voluptatibus earum iure quasi, soluta non harum, a quam facere. Nulla rem ratione illum quasi expedita earum assumenda a ipsum nam cum, atque inventore, quis id totam officiis commodi nesciunt! Suscipit recusandae ex ab hic voluptatem incidunt quas. Maiores, qui totam. Similique nesciunt possimus voluptatum blanditiis? Assumenda corrupti voluptatum magni enim suscipit cum sequi aliquam sapiente quam ratione. Aliquam ex nihil facere vitae.</p>
+        </article>
+
+        <article class="row">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo quas velit obcaecati fugit aliquid cupiditate minus amet accusantium at laudantium illum temporibus facere hic magni alias, recusandae quia ullam dolores totam quod similique? Eligendi fugiat eaque voluptatibus earum iure quasi, soluta non harum, a quam facere. Nulla rem ratione illum quasi expedita earum assumenda a ipsum nam cum, atque inventore, quis id totam officiis commodi nesciunt! Suscipit recusandae ex ab hic voluptatem incidunt quas. Maiores, qui totam. Similique nesciunt possimus voluptatum blanditiis? Assumenda corrupti voluptatum magni enim suscipit cum sequi aliquam sapiente quam ratione. Aliquam ex nihil facere vitae.</p>
+        </article>
+    </section>
+
+    <section class="video" id="video">
+        <iframe src="" frameborder="0"></iframe>
+    </section>
+
+    <section class="form">
+        <h2 class="subscribe">Subscribe to Our Newsletter</h2>
+        <form action="" method="get">
+            <label for="" id="">Email</label>
+            <input type="email" name="email" id="email" placeholder="email@email.com">
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <section class="container">
+            <section class="foot">
+                <h2>Heading</h2>
+                <ul>
+                    <li>About</li>
+                    <li>About</li>
+                    <li>About</li>
+                    <li>About</li>
+                </ul>
+            </section>
+
+            <section class="foot">
+                <h2>Heading</h2>
+                <ul>
+                    <li>About</li>
+                    <li>About</li>
+                    <li>About</li>
+                    <li>About</li>
+                </ul>
+            </section>
+
+            <section class="foot">
+                <h2>Heading</h2>
+                <ul>
+                    <li>About</li>
+                    <li>About</li>
+                    <li>About</li>
+                    <li>About</li>
+                </ul>
+            </section>
+
+            <section class="foot">
+                <h2>Heading</h2>
+                <ul>
+                    <li>About</li>
+                    <li>About</li>
+                    <li>About</li>
+                    <li>About</li>
+                </ul>
+            </section>
+        </section>
+        <p>&copy; 2020 Achi Gyuse Achi</p>
+    </footer>
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "top-nav") {
+                x.className += " responsive";
+                /*change top-nav to top-nav.responsive*/
+            } else {
+                x.className = "top-nav";
+            }
+        }
+    </script>
+
+</body>
+</html>
